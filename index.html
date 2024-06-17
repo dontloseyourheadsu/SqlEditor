@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/atom-one-dark.css">
+</head>
+<body>
+
+<pre>
+    <code class="language-sql" contenteditable="true" 
+    id="sql-editor"
+    spellcheck="false"
+    oninput="writeOnSqlEditor(this)">SELECT * FROM People</code>
+</pre>
+    
+    <script src="script.js"></script>
+    <script src="highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
